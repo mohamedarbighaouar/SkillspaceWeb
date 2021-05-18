@@ -1,0 +1,52 @@
+<mat-toolbar>
+  <div class="container">
+  <span>
+    <a>
+      <span><img routerLink="/home" src="assets/logo skill blanc@2x.png" class="header_menu_logo" alt="Logo Orange"></span>
+    </a>  
+    <a routerLink="/">
+      <span></span>
+
+    </a>
+  </span>
+</div>
+
+  <span>
+    <a>
+
+    </a>
+
+
+
+    <a
+      *ngIf="isAuthenticated"
+      routerLinkActive="active-link"
+      routerLink="/posts"
+    >
+      <span>Formation</span>
+    </a>
+    <a
+      *ngIf="!isAuthenticated"
+      routerLinkActive="active-link"
+      routerLink="/login"
+    >
+    <button mat-button class="login">Login</button>
+    </a>
+    <a
+      *ngIf="isAuthenticated"
+      (click)="logout()"
+      routerLinkActive="active-link"
+      routerLink="/login"
+    >
+    <button mat-button class="logout">Logout</button>
+    </a>
+    <a
+      *ngIf="!isAuthenticated"
+      routerLinkActive="active-link"
+      routerLink="/signup"
+    >
+    <button mat-button class="signup">Signup</button>
+    </a>
+  </span>
+
+</mat-toolbar>

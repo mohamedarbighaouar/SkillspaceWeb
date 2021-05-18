@@ -3,8 +3,38 @@ mat-form-field {
 }
 
 button {
-  color: #ff7500;
-  background-color: black;
+  color: black;
+  background-color: #ff7500;
   float: right;
   width: 200px;
+}
+
+
+h1{
+  text-align: left;
+font: normal normal bold 40px/57px Arial;
+letter-spacing: -0.24px;
+color: #000000;
+opacity: 1;
+}
+
+
+.txt {
+  height: 40px;
+  width: 1110px;
+  border: 2px solid var(--unnamed-color-cccccc);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 2px solid #CCCCCC;
+opacity: 1;
+}
+
+.radio{
+  margin: .4rem;
+}
+
+
+.radio {
+  background: #F16E00 0% 0% no-repeat padding-box;
+opacity: 1;
+margin: .4rem;
 }

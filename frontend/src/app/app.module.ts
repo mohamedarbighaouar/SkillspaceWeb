@@ -31,6 +31,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { GridComponent } from './components/grid/grid.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GridlistnoirComponent } from './components/grid/gridlistnoir/gridlistnoir.component';
+import { GridblancComponent } from './components/grid/gridblanc/gridblanc.component';
+import { GridgrisComponent } from './components/grid/gridgris/gridgris.component';
 
 
 
@@ -49,6 +51,8 @@ import { GridlistnoirComponent } from './components/grid/gridlistnoir/gridlistno
     GridComponent,
     FooterComponent,
     GridlistnoirComponent,
+    GridblancComponent,
+    GridgrisComponent,
 
   ],
   imports: [

@@ -11,16 +11,29 @@ exports.signup = async (req, res, next) => {
   if (!errors.isEmpty()) return;
 
   const name = req.body.name;
+  const lastname=req.body.lastname;
   const email = req.body.email;
+  const numtel = req.body.numtel;
   const password = req.body.password;
+  const genre = req.body.genre;
+  const photo = req.body.photo;
+  const linkedin = req.body.linkedin;
+  const youtube = req.body.youtube;
+  
 
   try {
     const hashedPassword = await bcrypt.hash(password, 12);
 
     const userDetails = {
       name: name,
+      lastname: lastname,
       email: email,
+      numtel: numtel,
       password: hashedPassword,
+      genre: genre,
+      photo: photo,
+      linkedin: linkedin,
+      youtube: youtube,
     };
 
     const result = await User.save(userDetails);

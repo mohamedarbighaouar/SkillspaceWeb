@@ -10,7 +10,7 @@
 <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
   <mat-form-field>
     <h2>Nom</h2>
-    <input class="txt" formControlName="name" />
+    <input class="txt" formControlName="name" formControlName="name>" required  />
   </mat-form-field>
   <mat-form-field>
     <h2>Prénom</h2>
@@ -18,17 +18,17 @@
   </mat-form-field>
   <mat-form-field>
     <h2>Adresse mail</h2>
-    <input class="txt" placeholder="Orange@gmail.com" formControlName="email" />
+    <input class="txt" placeholder="Orange@gmail.com" formControlName="email" required />
   </mat-form-field>
   <mat-form-field>
     <h2>Numéro de téléphone</h2>
-    <input class="txt" placeholder="+216" />
+    <input class="txt" placeholder="+216" formControlName="numtel" required />
   </mat-form-field>
   <mat-form-field>
     <h2>Mot de passe</h2>
     <input class="txt"
     type="password"
-      formControlName="password"
+      formControlName="password" required 
     />
   </mat-form-field>
   <mat-form-field>
@@ -54,10 +54,10 @@
     </mat-form-field>
   <mat-form-field>
     <h2>Liens</h2>
-    <input class="txt" formControlName="" />
+    <input class="txt" formControlName="linkedin" required />
     </mat-form-field>
     <mat-form-field>
-      <input class="txt" formControlName="" />
+      <input class="txt" formControlName="youtube" />
       </mat-form-field>
   <button
     [disabled]="!signupForm.valid"

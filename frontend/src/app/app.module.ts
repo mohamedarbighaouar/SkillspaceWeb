@@ -33,6 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GridlistnoirComponent } from './components/grid/gridlistnoir/gridlistnoir.component';
 import { GridblancComponent } from './components/grid/gridblanc/gridblanc.component';
 import { GridgrisComponent } from './components/grid/gridgris/gridgris.component';
+import { ApprenantComponent } from './components/profils/apprenant/apprenant.component';
+import { FormateurComponent } from './components/profils/formateur/formateur.component';
 
 
 
@@ -53,6 +55,8 @@ import { GridgrisComponent } from './components/grid/gridgris/gridgris.component
     GridlistnoirComponent,
     GridblancComponent,
     GridgrisComponent,
+    ApprenantComponent,
+    FormateurComponent,
 
   ],
   imports: [

@@ -24,7 +24,7 @@ export class PostsComponent implements OnInit {
 
   ngOnInit(): void {
     this.posts$ = this.fetchAll();
-    this.userId = this.authService.userId;
+    this.userId = this.authService.userId; 
   }
 
   fetchAll(): Observable<Post[]> {

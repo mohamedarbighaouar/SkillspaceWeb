@@ -35,6 +35,8 @@ import { GridblancComponent } from './components/grid/gridblanc/gridblanc.compon
 import { GridgrisComponent } from './components/grid/gridgris/gridgris.component';
 import { ApprenantComponent } from './components/profils/apprenant/apprenant.component';
 import { FormateurComponent } from './components/profils/formateur/formateur.component';
+import { CoursApprenantComponent } from './components/cours-apprenant/cours-apprenant.component';
+import { NotifApprenantComponent } from './components/notif-apprenant/notif-apprenant.component';
 
 
 
@@ -57,6 +59,8 @@ import { FormateurComponent } from './components/profils/formateur/formateur.com
     GridgrisComponent,
     ApprenantComponent,
     FormateurComponent,
+    CoursApprenantComponent,
+    NotifApprenantComponent,
 
   ],
   imports: [

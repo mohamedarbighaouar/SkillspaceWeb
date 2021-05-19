@@ -3,7 +3,12 @@
 <div>
     <span>
       <a><h1>Instructeurs</h1></a>
-      <a><button mat-flat-button >Voir Plus</button></a>
+      
+      <a 
+      *ngIf="!isAuthenticated"
+      routerLinkActive="active-link"
+      routerLink="/login"
+    ><button mat-flat-button >Voir Plus</button></a> 
     </span>
   
   </div>

@@ -37,6 +37,7 @@ import { ApprenantComponent } from './components/profils/apprenant/apprenant.com
 import { FormateurComponent } from './components/profils/formateur/formateur.component';
 import { CoursApprenantComponent } from './components/cours-apprenant/cours-apprenant.component';
 import { NotifApprenantComponent } from './components/notif-apprenant/notif-apprenant.component';
+import { PanierComponent } from './components/panier/panier.component';
 
 
 
@@ -61,6 +62,7 @@ import { NotifApprenantComponent } from './components/notif-apprenant/notif-appr
     FormateurComponent,
     CoursApprenantComponent,
     NotifApprenantComponent,
+    PanierComponent,
 
   ],
   imports: [

@@ -12,11 +12,11 @@
 
 <mat-grid-list cols="3" >
     <mat-grid-tile>
-        <mat-card class="example-card">
+        <mat-card class="example-card" routerLink="/login">
 
-            <img mat-card-image src="assets/img/blender_render-1280x720@2x.png" alt="Photo of a Shiba Inu">
+            <img mat-card-image src="assets/img/blender_render-1280x720@2x.png" alt="Photo of a Shiba Inu" routerLink="/login">
             <mat-card-content>
-              <p>
+              <p routerLink="/login">
                 Blender pour les débutants
               </p>
               <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating>
@@ -63,17 +63,17 @@
 
 
 <div><h1>Classes</h1>
-    <button mat-flat-button routerLink="/login" >Voir Plus</button>
+    <button mat-flat-button routerLink="/formation" >Voir Plus</button>
 </div>
 
 
   <mat-grid-list cols="3" >
     <mat-grid-tile>
-        <mat-card class="example-card">
+        <mat-card class="example-card" >
 
-            <img mat-card-image src="assets/img/jeshoots-com-p8kaVRe4edM-unsplash@2x.png" alt="Photo of a Shiba Inu">
+            <img mat-card-image src="assets/img/jeshoots-com-p8kaVRe4edM-unsplash@2x.png" alt="Photo of a Shiba Inu" routerLink="/login">
             <mat-card-content>
-              <p>
+              <p routerLink="/login">
                 Blender pour les débutants
               </p>
               <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating>

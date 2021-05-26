@@ -12,6 +12,7 @@ import { ChangpasswordComponent } from "./components/changpassword/changpassword
 import { NotifApprenantComponent } from "./components/notif-apprenant/notif-apprenant.component";
 import { PanierComponent } from "./components/panier/panier.component"
 import { FormationComponent } from "./components/formation/formation.component";
+import { PaiementComponent } from "./components/paiement/paiement.component";
 import { from } from "rxjs";
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "notifapp" , component :NotifApprenantComponent},
   { path: "panier" , component :PanierComponent},
   { path: "formation" , component :FormationComponent},
+  { path: "paiement" , component : PaiementComponent},
   { path: "**", redirectTo: "" },
 ];
 

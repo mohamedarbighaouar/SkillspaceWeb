@@ -43,6 +43,7 @@ import { ModifierinfoComponent } from './components/modifierinfo/modifierinfo.co
 import { ChangpasswordComponent } from './components/changpassword/changpassword.component';
 import { FormationComponent } from './components/formation/formation.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { PaiementComponent } from './components/paiement/paiement.component';
 
 
 
@@ -73,6 +74,7 @@ import { ChatComponent } from './components/chat/chat.component';
     ChangpasswordComponent,
     FormationComponent,
     ChatComponent,
+    PaiementComponent,
 
   ],
   imports: [

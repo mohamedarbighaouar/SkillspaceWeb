@@ -4,13 +4,16 @@
 <div class="container">
   <h1>Signup</h1>
 
-  <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-  </i> Login with Google+
+  <a> 
+    <button mat-raised-button class="google" >Signup with Google <img class="icongoogle" src="assets/img/icongoogle.png"/></button>
+</a>
+<a> 
+  <button mat-raised-button class="linkedin" >Signup with Linkedin <img class="iconlinkedin" src="assets/img/iconlinkedin.png"/></button>
 </a>
 <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
   <mat-form-field>
     <h2>Nom</h2>
-    <input class="txt" formControlName="name" formControlName="name>" required  />
+    <input class="txt" formControlName="name" formControlName="name" required  />
   </mat-form-field>
   <mat-form-field>
     <h2>Prénom</h2>
@@ -64,7 +67,7 @@
     mat-raised-button
     type="submit"
   >
-    <span>Sign up</span>
+    <span>Sign up</span> 
   </button>
 </form>
 </div>

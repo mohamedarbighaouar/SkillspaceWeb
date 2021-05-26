@@ -1,32 +1,87 @@
+
+  <!--div >
+    <a href="/"><img routerLink="/home" src="assets/logo skill blanc@2x.png" alt="Logo Orange" class="logo"></a>
+
+
+    <a *ngIf="isAuthenticated" routerLinkActive="active-link" routerLink="/posts"><span><img  src="/assets/img/aarbi@2x.png"></span></a>
+    <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/login"><button mat-button class="login">Login</button></a>
+    <a *ngIf="isAuthenticated" (click)="logout()" routerLinkActive="active-link" routerLink="/home"><button mat-button class="logout">Logout</button></a>
+    <a *ngIf="!isAuthenticated" routerLinkActive="active-link" routerLink="/signup"> <button mat-button class="signup">Signup</button></a>
+  </div-->
+    <!--a routerLink="/"><span></span></a-->
+    
+    <!--a class="recherche"> <input type="text" value="Recherche"></a-->
+    <!--a><mat-icon matBadge="15" matBadgeColor="panier">home</mat-icon> </a-->
+   
+    
+
 <mat-toolbar>
-  <div class="container">
+ 
   <span>
-    <a>
+    <!--a>
       <span><img routerLink="/home" src="assets/logo skill blanc@2x.png" class="header_menu_logo" alt="Logo Orange"></span>
-    </a>  
+    </a-->  
     <a routerLink="/">
       <span></span>
 
     </a>
   </span>
-</div>
 
+ 
   <span>
     <a>
 
     </a>
 
-
-
-    <a
-      *ngIf="isAuthenticated"
-      routerLinkActive="active-link"
-      routerLink="/posts"
-    >
-      <span>Formation</span>
+    <a>
+      <span><img routerLink="/home" src="assets/logo skill blanc@2x.png" class="header_menu_logo" alt="Logo Orange"></span>
     </a>
+    
+    <a>
+      <!--select class="cat">
+        <option value="volvo">Catégories</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select-->
+    </a>
+    
+    <a>
+      <span><input type="text" value="Recherche" class="recherche"></span>
+    </a>
+
+
+
+ 
+
     <a
-      *ngIf="!isAuthenticated" 
+    
+    *ngIf="isAuthenticated"
+    routerLinkActive="active-link"
+    routerLink="/notifapp"
+    >
+      <span><img src="/assets/img/Shape@2x.png" alt="Med Arbi" class="imgnotif"></span>
+    </a>
+
+    <a
+    *ngIf="isAuthenticated"
+    routerLinkActive="active-link"
+    routerLink="/panier"
+  >
+    <span><img src="/assets/img/Functional_UI - ic_Buy@2x.png" alt="Med Arbi" class="imgpan"></span>
+  </a>
+ 
+  <a
+    
+  *ngIf="isAuthenticated"
+  routerLinkActive="active-link"
+  routerLink="/posts"
+  >
+    <span><img src="/assets/img/aarbi@2x.png" alt="Med Arbi" class="imgprof"></span>
+  </a>
+
+    <a
+      *ngIf="!isAuthenticated"  
       routerLinkActive="active-link"
       routerLink="/login"
     >
@@ -50,3 +105,8 @@
   </span>
 
 </mat-toolbar>
+
+
+
+
+

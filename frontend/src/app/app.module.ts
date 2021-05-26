@@ -38,6 +38,11 @@ import { FormateurComponent } from './components/profils/formateur/formateur.com
 import { CoursApprenantComponent } from './components/cours-apprenant/cours-apprenant.component';
 import { NotifApprenantComponent } from './components/notif-apprenant/notif-apprenant.component';
 import { PanierComponent } from './components/panier/panier.component';
+import { ModifierComponent } from './components/modifier/modifier.component';
+import { ModifierinfoComponent } from './components/modifierinfo/modifierinfo.component';
+import { ChangpasswordComponent } from './components/changpassword/changpassword.component';
+import { FormationComponent } from './components/formation/formation.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 
@@ -63,6 +68,11 @@ import { PanierComponent } from './components/panier/panier.component';
     CoursApprenantComponent,
     NotifApprenantComponent,
     PanierComponent,
+    ModifierComponent,
+    ModifierinfoComponent,
+    ChangpasswordComponent,
+    FormationComponent,
+    ChatComponent,
 
   ],
   imports: [

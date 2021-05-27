@@ -44,6 +44,7 @@ import { ChangpasswordComponent } from './components/changpassword/changpassword
 import { FormationComponent } from './components/formation/formation.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { PaiementComponent } from './components/paiement/paiement.component';
+import { VideoplaylisteComponent } from './components/videoplayliste/videoplayliste.component';
 
 
 
@@ -75,6 +76,7 @@ import { PaiementComponent } from './components/paiement/paiement.component';
     FormationComponent,
     ChatComponent,
     PaiementComponent,
+    VideoplaylisteComponent,
 
   ],
   imports: [

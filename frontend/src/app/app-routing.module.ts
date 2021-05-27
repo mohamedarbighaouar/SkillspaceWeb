@@ -14,6 +14,7 @@ import { PanierComponent } from "./components/panier/panier.component"
 import { FormationComponent } from "./components/formation/formation.component";
 import { PaiementComponent } from "./components/paiement/paiement.component";
 import { ChatComponent } from "./components/chat/chat.component";
+import { VideoplaylisteComponent } from "./components/videoplayliste/videoplayliste.component";
 import { from } from "rxjs";
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: "formation" , component :FormationComponent},
   { path: "paiement" , component : PaiementComponent},
   { path: "chat" , component : ChatComponent},
+  { path: "videoplayliste" , component : VideoplaylisteComponent},
   { path: "**", redirectTo: "" },
 ];
 

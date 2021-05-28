@@ -47,6 +47,11 @@ import { PaiementComponent } from './components/paiement/paiement.component';
 import { VideoplaylisteComponent } from './components/videoplayliste/videoplayliste.component';
 
 
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
+
 
 
 @NgModule({
@@ -94,6 +99,10 @@ import { VideoplaylisteComponent } from './components/videoplayliste/videoplayli
     MatTabsModule,
     MatGridListModule,
     NgbModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
     
     
   ],

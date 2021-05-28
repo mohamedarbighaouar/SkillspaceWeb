@@ -20,6 +20,49 @@
 
 <div class="block2">
 
+
+    <div class="video-player-wrapper"> 
+
+        <vg-player (onPlayerReady)="videoPlayerInit($event)">
+          <vg-overlay-play></vg-overlay-play>
+          <vg-buffering></vg-buffering>
+    
+          <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+          </vg-scrub-bar>
+    
+          <vg-controls>
+            <vg-play-pause></vg-play-pause>
+            <vg-playback-button></vg-playback-button>
+    
+            <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+    
+            <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+    
+            <vg-mute></vg-mute>
+            <vg-volume></vg-volume>
+    
+            <vg-fullscreen></vg-fullscreen>
+          </vg-controls>
+    
+          <video #media [vgMedia]="media" [src]="currentVideo.src" id="singleVideo" preload="auto" crossorigin>
+          </video>
+        </vg-player>
+    
+
+        <button mat-button class="player-list2" ></button>
+
+        <!--ul class="player-list">
+          <li *ngFor="let vdo of videoItems; let $index = index"
+            (click)="startPlaylistVdo(vdo, $index)" [class.selected]="vdo === currentVideo">
+            {{ vdo.name }}
+          </li>
+        </ul-->
+    
+      </div>
+    
+
 </div>
 
 
@@ -37,6 +80,14 @@
 
 
 <div class="block3">
+
+
+
+
+
+
+
+
 <p class="presentationformation">From elaborate animation projects to fun GIFs for social media, the leading
      creative video editing software Adobe After Effects has no limits when it comes to animation design. This 
      Domestika Basics includes 5 courses, to learn all there is to know about the software and get started 

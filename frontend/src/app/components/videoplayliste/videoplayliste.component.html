@@ -21,6 +21,7 @@
 <div class="block2">
 
 
+
     <div class="video-player-wrapper"> 
 
         <vg-player (onPlayerReady)="videoPlayerInit($event)">
@@ -50,9 +51,20 @@
           </video>
         </vg-player>
     
+         
 
-        <button mat-button class="player-list2" ></button>
 
+        <div class="divplayliste">
+          <h1 class="contenu">Contenu du cours</h1>
+          <button *ngFor="let vdo of videoItems; let $index = index"
+          (click)="startPlaylistVdo(vdo, $index)" [class.selected]="vdo === currentVideo" mat-button class="player-list2" >{{ vdo.name }}</button>
+        </div>
+        
+
+        
+        
+        
+        
         <!--ul class="player-list">
           <li *ngFor="let vdo of videoItems; let $index = index"
             (click)="startPlaylistVdo(vdo, $index)" [class.selected]="vdo === currentVideo">
@@ -82,7 +94,7 @@
 <div class="block3">
 
 
-
+<h1 class="prz">Présentation</h1>
 
 
 

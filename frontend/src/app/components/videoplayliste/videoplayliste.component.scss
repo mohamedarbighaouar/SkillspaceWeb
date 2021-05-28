@@ -439,11 +439,60 @@ height: 500px;
 
 .divplayliste {
     position: absolute;
-    left: 200px;
-    top: 2500px;
+    left: 920px;
+    top: 0px;
 
     width: 300px;
 height: 410px;
-background: #c01010 0% 0% no-repeat padding-box;
+background: #ff7900 0% 0% no-repeat padding-box;
+opacity: 0.9;
+}
+
+.player-list2 {
+    top: 3px;
+    left: 5px;
+    
+    width: 290px;
+height: 40px;
+background: var(--unnamed-color-cccccc) 0% 0% no-repeat padding-box;
+background: #CCCCCC 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+
+margin-top: 10px;
+
+
+
+text-align: left;
+font: normal normal bold 16px/18px Arial;
+letter-spacing: -0.11px;
+color: #000000;
+opacity: 1;
+}
+
+.contenu {
+    top: 60px;
+    left: 10px;
+
+    width: 200px;
+height: 20px;
+text-align: left;
+font: normal normal bold 20px/22px Arial;
+letter-spacing: -0.4px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+
+.prz {
+
+    position: absolute;
+    left: 350px;
+    top: 1000px;
+    color: var(--unnamed-color-ff7900);
+text-align: left;
+font: bold 40px/50px Arial;
+letter-spacing: -0.14px;
+color: #FF7900;
 opacity: 1;
 }

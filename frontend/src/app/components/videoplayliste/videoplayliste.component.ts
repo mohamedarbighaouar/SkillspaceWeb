@@ -24,9 +24,11 @@ export class VideoplaylisteComponent implements OnInit {
   currentVideo = this.videoItems[this.activeIndex];
   data;
 
-  constructor() { }
+  constructor() { } 
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+   }
 
   videoPlayerInit(data) {
     this.data = data;

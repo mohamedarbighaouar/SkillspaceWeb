@@ -3,19 +3,42 @@
     <h1>Nos Formations</h1>
 
 </div>
-
+ 
 
 <div class="container"> 
 
     <mat-tab-group>
         <mat-tab label="Cours recommandé"><app-cours-apprenant routerLink="/videoplayliste"></app-cours-apprenant><br>
             <app-cours-apprenant></app-cours-apprenant><br>
+            
+        </mat-tab>
+        <mat-tab label="Nouvelles cours">
+            <app-cours-apprenant></app-cours-apprenant>
+
+
+        </mat-tab>
+        <mat-tab label="Session Live">
+            <div class="ssl">
+            
+                    
+                <p class="valid">Session Live Gratuite</p>
+
+
+                <p class="methpay">Participer a une session live</p>
+                <!--a href="http://www.google.com" class="resumcours" >Lien de la session live</a-->
+
+                <button mat-raised-button RouterLink="http://www.google.com" class="patic"><span>Participer</span></button>
+                
+                <p class="prixresum">Gratuite</p>
+                <img class="imgcours" src="/assets/img/seo-javascript-the-good-the-bad-the-uncertainty-5e4a09b3cd5db@2x.png">
+                <div class="blockvalid"></div>
+                            
+            </div>
+
+        </mat-tab>
+        <mat-tab label="Nos Formateurs">
             <app-cours-apprenant></app-cours-apprenant><br>
             <app-cours-apprenant></app-cours-apprenant>
-        </mat-tab>
-        <mat-tab label="Nouvelles cours"></mat-tab>
-        <mat-tab label="Session Live"></mat-tab>
-        <mat-tab label="Nos Formateurs">
         </mat-tab>
       </mat-tab-group>
 </div>

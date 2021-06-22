@@ -12,6 +12,8 @@ const app = express();
 
 const helmet = require("helmet");
 
+var cors = require('cors');
+
 const ports = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
@@ -41,5 +43,7 @@ app.use(errorController.get404);
 app.use(errorController.get500);
 
 app.use(helmet());
+
+app.use(cors());
 
 app.listen(ports, () => console.log(`Listening on port ${ports}`));
